@@ -1,1 +1,2 @@
-## This is the python app 1
+## This is the simple calculator python app
+# CICD_GitActions_ex

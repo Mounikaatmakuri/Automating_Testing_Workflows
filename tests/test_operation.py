@@ -1,4 +1,4 @@
-from src.math_operations import add,sub
+from src.math_operations import add,sub, mul, div, mod
 
 def test_add():
     assert add(2,3)==5
@@ -18,16 +18,17 @@ def test_mul():
 def test_div():
     assert div(6,3)==2
     assert div(5,2)==2.5
-    # try:
-    #     div(5,0)
-    # except ValueError as e:
-    #     assert str(e) == "Cannot divide by zero"    
+    try:
+        div(5,0)
+    except ValueError as e:
+        assert str(e) == "Cannot divide by zero"    
         
 def test_mod():
     assert mod(5,3)==2
     assert mod(5,5)==0
-    # try:
-    #     mod(5,0)
-    # except ValueError as e:
+    try:
+        mod(5,0)
+    except ValueError as e:
 
-    #     assert str(e) == "Cannot divide by zero"                    
+        assert str(e) == "Cannot divide by zero"                    
+
